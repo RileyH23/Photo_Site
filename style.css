@@ -1,2 +1,44 @@
 /* Importing a Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    background-color: #eee;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+
+    font-weight: bold;
+    /* font-weight: 700; */
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    /* VW sets the font/text size based on the width of the viewport (AKA Browser Window) */
+    font-size: 2vw;
+
+    text-align: center;
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 10px;
+
+    /* Width of two images */
+    /* 22.5 * 2 = 45 */
+    /* Width between two images (AKA Margin) */
+    /* 1.25 * 2 = 2.5 */
+    /* Width of bottom border of paragraph element */
+    /* 45 + 2.5 = 47.5 */
+    width: 47.5%;
+
+    /* "margin: auto" centers the P element horizontally inside of the body element */
+    margin: auto;
+}
+
+img{
+    /* 22.5% * 4 = 90 */
+    width: 22.5%;
+    /* 1.25 * 8 = 10 */
+    margin: 1.25%;
+
+    /* The float CSS property places an element on the left or right side of its containers/elements to wrap around it. The element is removed from the normal document flow. Also, removes the space between img (AKA Image) elements */
+    float: left;
+}
